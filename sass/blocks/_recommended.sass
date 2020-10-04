@@ -1,0 +1,273 @@
+.recommended
+  margin-bottom: 30px
+  &-swiper
+    display: none
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 263px
+  &-main
+    width: auto
+    display: none
+    padding-left: 55px
+    padding-top: 55px
+    &_food
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/recommended/food.png)
+      background-size: cover
+      background-repeat: no-repeat
+    &_cars
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/recommended/cars.jpg) 
+      background-size: cover
+      background-repeat: no-repeat
+    &_movies
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/recommended/movies.jpg) 
+      background-size: cover
+      background-repeat: no-repeat
+    &_nfl
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/recommended/nfl.jpg)
+      background-size: cover
+      background-repeat: no-repeat
+    &_tech
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/recommended/tech.jpg)
+      background-size: cover
+      background-repeat: no-repeat
+    &__person
+      margin-bottom: 145px
+  &__destinations
+    font-family: Lato
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #deecff
+  &__title
+    max-width: 500px
+    font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: #FFFFFF
+ 
+  &__block-button
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &__text-about-video
+    margin: 0
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__time-video
+    opacity: 0.4     
+  &-list
+    max-width: 263px 
+    background-color: #fff 
+    &__title
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0
+      padding-top: 20px
+      padding-bottom: 20px
+      font-family: Lato
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+      border-bottom: 1px solid  #D9DADB
+    &__block
+      position: relative
+      padding: 17px 25px 19px 25px
+      border-bottom: 1px solid  #D9DADB
+      transition: all 0.3s
+      
+
+      &:last-child
+        border: none
+      &:hover
+        background-color: #F5F5F5
+      
+      &_active
+        background-color: #F5F5F5
+        &:after
+          display: block
+          content: ''
+          position: absolute
+          left: -22px
+          top: 38%
+          border: 10px solid transparent
+          border-right: 12px solid #F5F5F5
+
+           
+        
+    &__name
+      display: block
+      font-family: Lato
+      font-size: 12px
+      line-height: 15px
+      align-items: center
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin-bottom: 8px
+    &__text
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      
+  &__button
+    &-black
+      position: absolute
+      margin-left: 7px
+    &-white
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      border: 2px solid rgba(#ffffff, 0.4) 
+      border-radius: 50%
+      margin-left: 30px
+      margin-right: 10px
+  &__arrow-button    
+    margin-left: 3px 
+.word
+  &-food
+    color: #3BBDC4
+  &-cars
+    color: #6E99AE
+    text-transform: uppercase
+  &-movies
+    color: #AC8EE3
+  &-nfl
+    color: #FFA34D
+  &-tech
+    color: #3DC47E
+.active
+  display: block
+
+@media  ( max-width: 991px )
+  .recommended
+    &-block
+      &-wrapper
+        display: none
+    &-swiper
+      display: block
+      grid-area: 2/1/2/4
+      max-width: 100%
+      height: 100px
+      margin-left: auto
+      margin-right: auto
+      position: relative
+      overflow: hidden
+      list-style: none
+      padding: 0
+      z-index: 1
+    &-wrapper
+      grid-template-columns: 1fr
+    &-main
+      height: 425px
+      padding: 30px 40px 30px 40px
+      &__person
+        margin-bottom: 100px 
+    &__title
+      margin: 0
+      margin-bottom: 20px
+    &-list
+      max-width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr  
+      &__title
+        grid-area: 1/1/1/4
+      &__block
+        height: 100%
+        padding: 20px 20px 20px 20px
+        border-bottom: none
+        border-right: 1px solid #D9DADB
+        
+        &:last-child
+          border-right: 1px solid #D9DADB
+        &:nth-child(4)
+          border: none
+        &_active
+          background-color: #F5F5F5
+          &:after
+            display: block
+            content: ''
+            position: absolute
+            left: 40%
+            top: 0
+            border: 24px solid transparent
+            border-top: 12px solid #ffffff
+          
+
+
+@media  ( max-width: 767px )
+  .recommended
+    
+    &-main
+      height: 325px
+      padding: 30px 40px 30px 40px
+      &__person
+        margin-bottom: 20px
+
+    &__title
+      font-size: 34px
+      line-height: 44px
+
+@media  ( max-width: 576px ) 
+  .recommended
+    &__title
+      max-width: 300px
+      font-size: 27px
+      line-height: 35px
+    &__button
+      margin-right: 130px
+      margin-bottom: 20px
+      &-white
+        margin-left: 0
+    &-list
+      max-width: 100%
+      display: grid
+      grid-template-columns: 1fr 1fr 
+      grid-column-gap: 10px
+      &__title
+        grid-area: 1/1/1/4
+      &__text
+        font-size: 12px
+        line-height: 18px
+      &__block
+        // &:nth-child(even)
+        //   border-right: 1px solid #D9DADB
+        // &:nth-child(odd)
+        //   border-right: none
+         
+@media  ( max-width: 420px )
+  .recommended
+    &-list
+      &__block
+        padding: 15px 10px 10px 10px
+    &__title 
+      max-width: 260px
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 10px
+    &__button 
+      margin-right: 119px
+      margin-bottom: 15px
+  .arrow-play
+    display: none
+
+@media  ( max-width: 360px )
+  .recommended
+    &-main 
+      height: 300px
+      padding: 15px 20px 15px 20px

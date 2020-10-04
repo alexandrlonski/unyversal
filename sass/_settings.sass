@@ -1,0 +1,112 @@
+*
+  box-sizing: border-box
+  outline: none
+body
+  font-family: 'Muli', sans-serif
+  color: $text-color
+  background-color: #E5E5E5
+  
+.container
+  max-width: 1110px
+  margin: auto
+img
+  max-width: 100%
+.input
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  padding: 0 23px
+  height: 50px
+  outline: none
+a
+  text-decoration: none
+  color: #ffffff
+ul
+  margin: 0
+  padding: 0
+li
+  list-style: none  
+.button
+  border: none
+  cursor: pointer 
+  &-read
+    background: #4592FF
+    border-radius: 20px
+    padding: 10px 25px
+    font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    color: #ffffff
+    border: none
+    &-hide
+      background: #6E99AE
+      border-radius: 6px
+      padding: 7px 25px
+      font-family: Lato
+      font-size: 14px
+      line-height: 20px
+      color: #ffffff
+      border: none
+      width: 45%
+      
+.arrow-button
+  margin-left: 8px
+
+.person
+  display: flex
+  flex-direction: row
+  align-items: center
+  &__info
+    display: block
+    margin-left: 10px
+  &__name
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    mix-blend-mode: normal
+    opacity: 0.85
+
+  &__vocation
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    display: flex
+    align-items: center
+    color: #FFFFFF
+    opacity: 0.4
+  &__avatar
+    display: block
+    width: 45px
+    height: 45px
+    object-fit: cover
+    border-radius: 50%
+    overflow: hidden
+
+.line  
+  position: absolute
+  top: 17px
+  right: 15px
+  width: 17px
+  height: 2px
+  background-color: black
+  transition: all 0.4s
+  transform: rotate(45deg)
+  margin-top: 0px
+  &:after 
+    content: ""
+    display: block
+    position: absolute
+    top: 0px
+    right: 0px
+    width: 17px
+    height: 2px
+    background-color: black
+    transform: rotate(90deg)
+

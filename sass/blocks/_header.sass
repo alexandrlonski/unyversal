@@ -1,0 +1,208 @@
+.header
+  background-color: #fff
+ 
+  &-top
+    height: 50px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #D9DADB
+    &__left
+      position: relative
+      height: 100%
+      display: flex
+      align-items: center
+    &__right 
+      display: flex
+      align-items: center
+
+
+  &__menu-button 
+    display: block
+    position: relative
+    top: 0
+    left: 0
+    width: 18px
+    height: 14px
+    margin-right: 10px
+    background-color: inherit
+    cursor: pointer
+  &__menu
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    border-right: 1px solid #D9DADB
+    height: 100%
+    padding-right: 25px
+    padding-left: 16px 
+    // font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    color: #262D33 
+  &__form
+    &-search
+      position: relative  
+  &__search
+    &-input
+      background-color: inherit
+      padding-left: 60px
+      border: none
+    &-image
+      position: absolute
+      left: 30px
+      top: 2px
+      
+  &__image
+    &-wrapper
+      width: 60px
+      height: 40px
+      margin-top: 8px
+      object-fit: cover
+      border: 3px solid #D9DADB
+      border-bottom: none
+  &__singIn
+    display: flex
+    align-items: center 
+    margin-left: 50px
+  &__subscribe
+    display: flex
+    flex-direction: column
+    margin-left: 10px
+    // font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &-link
+      color: #262D33
+    &-price
+      color: #939699
+  &-bottom
+    display: flex
+    align-items: center 
+    // font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    &__image
+      margin-left: 29px
+    &__text
+      margin-left: 15px  
+      margin-right: auto
+    &__date
+      margin-left: auto
+      margin-right: 50px 
+    &__weather
+      // margin-right: -13px
+      // margin-top: 10px   
+.singIn
+  margin-left: 12px
+  background-color: inherit
+.line-center 
+  position: absolute
+  top: 7px
+  width: 13px
+  height: 2px
+  background: #BCBFC2
+  transition: transform 0.4s
+  
+
+.line-center-active 
+  transform: rotate(90deg)
+  height: 0
+  
+.line-center::before 
+  content: ""
+  display: block
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 18px
+  height: 2px
+  background: #BCBFC2
+  margin-top: -7px
+  transition: all 0.4s
+  
+
+.line-center::after 
+  content: ""
+  display: block
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 18px
+  height: 2px
+  background: #BCBFC2
+  margin-top: 7px
+  transition: all 0.4s
+  
+
+.line-center-active::before 
+  transform: rotate(45deg)
+  margin-top: 0px
+  
+
+.line-center-active::after 
+  transform: rotate(-45deg)
+  margin-top: 0px
+    
+.gsInformer .gsLinks .leftColCenter 
+  display: none
+.gsLinks
+  display: none
+.gsInformer .secondaryWrap table td 
+  text-align: end
+  height: 35px
+  vertical-align: top
+  
+@media ( max-width: 1200px )
+  .header
+    &-bottom
+      &__text
+        max-width: 130px
+      &__date
+        max-width: 130px
+
+@media ( max-width: 991px )
+  .header
+    &-bottom
+      &__text
+        display: none
+      &__date
+        margin: 0
+      &__weather
+        display: none
+      &__logo
+        margin: auto
+      
+@media ( max-width: 767px )
+  .header
+    &__image
+      &-wrapper
+        display: none
+    &__subscribe
+      display: none
+    &-bottom
+      &__image
+        margin: 0
+    &__search
+      &-image
+        left: 10px
+      &-input
+        padding-left: 40px  
+
+@media ( max-width: 576px )  
+  .header 
+    &__form
+      &-search
+        display: none
+    &-bottom
+      &__date
+        display: none
+      &__logo
+        margin-left: auto
+        margin-right: 15px
+      

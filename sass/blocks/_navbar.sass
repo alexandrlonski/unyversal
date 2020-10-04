@@ -1,0 +1,49 @@
+.navbar
+  position: relative
+  background: #262D33
+  margin-bottom: 30px
+  &::after
+    position: absolute
+    top: 56px
+    left: 0
+    content: ''
+    height: 475px
+    width: 100%
+    background: #262D33
+    z-index: -1
+
+  &-menu
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding-top: 18px
+    padding-bottom: 18px
+    // font-family: Lato
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #FFFFFF
+    &__link
+      transition: all 0.2s
+
+@media ( max-width: 991px )
+  .navbar
+    &-menu
+      line-height: 30px
+      padding-bottom: 0px
+      &__link
+        margin-right: 10px
+        margin-left: 10px
+        
+@media ( max-width: 767px )
+  .navbar
+    &::after
+      top: 0px
+    &-menu
+      display: none
+
+@media ( max-width: 576px )
+  .navbar
+    margin-bottom: 15px

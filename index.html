@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine</title>
+  <link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-top__left">
+          <div class="header__menu-button">
+            <div class="line-center">
+            </div>
+          </div>
+          <div class="header__menu">Sections</div>
+          <form action="#" class="form  header__form-search ">
+            <input type="text" placeholder="Search " class="search-input header__search-input" />
+            <img src="img/header/Search.svg" class="search-image header__search-image" alt="Icon: search" />
+          </form>
+        </div>
+
+        <!-- /.header-top__left -->
+        <div class="header-top__right">
+          <div class="header__image-wrapper">
+            <img class="header__image" src="img/header/image.png" alt="image: magazine">
+          </div>
+
+          <!-- /.header__image-wrapper -->
+          <div class="header__subscribe">
+            <a class="header__subscribe-link" href="#">Subscribe Now</a>
+            <span class="header__subscribe-price">3 month for $19</span>
+          </div>
+          <!-- /.header__subscribe -->
+          <div class="header__singIn">
+            <img src="img/header/Man.svg" alt="Icon: man">
+            <span class="singIn">Sign In</span>
+          </div>
+          <!-- /.header__singIn -->
+        </div>
+        <!-- /.header-top__right -->
+      </div>
+      <div class="header-bottom">
+        <img class="header-bottom__image" src="img/header/statue.png" alt="Image: statue">
+        <span class="header-bottom__text">
+          Boston and New York Bear Brunt
+        </span>
+        <div class="header-bottom__logo">
+          <img class="logo header-logo" src="img/header/Universal.svg" alt="image: Logo">
+        </div>
+        <span id="date" class="date header-bottom__date ">
+
+        </span>
+        <!-- Gismeteo Informer (begin) -->
+        <div class="weather header-bottom__weather">
+          <div id="GMI_88x31-1_ru" class="gm-info">
+            <div
+              style="position:relative;width:88px;height:31px;border:solid 1px;background:#F5F5F5;border-color:#EAEAEA #E4E4E4 #DDDDDD #E6E6E6;border-radius:4px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;">
+              <a style="font:9px/11px Tahoma,Arial,sans-serif;text-align:center;text-decoration:none;position:absolute;bottom:3px;left:0;width:100%;color:#333;"
+                href="https://www.gismeteo.ru/"><span style="color:#0099FF;">Gis</span>meteo</a>
+            </div>
+          </div>
+          <!-- <div id="gsInformerID-68OPFC3GDQ53gv" class="gsInformer" style="width:125px;height:68px">
+          <div class="gsIContent">
+            <div id="cityLink">
+              <a href="https://www.gismeteo.ru/weather-moscow-4368/" target="_blank" title="Погода в Москве">
+                <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/gisloader.svg" width="24" height="24"
+                  alt="Погода в Москве">
+              </a>
+            </div>
+            <div class="gsLinks">
+              <table>
+                <tr>
+                  <td>
+                    <div class="leftCol">
+                      <a href="https://www.gismeteo.ru/" target="_blank" title="Погода">
+                        <img alt="Погода" src="https://ost1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle"
+                          border="0" width="11" height="16" />
+                        <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle"
+                          style="left: 5px; top:1px">
+                      </a>
+                    </div>
+                    <div class="rightCol">
+                      <a href="https://www.gismeteo.ru/weather-moscow-4368/2-weeks/" target="_blank"
+                        title="">
+                        <img src="https://ost1.gismeteo.ru/assets/flat-ui/img/informer/forecast-2weeks.ru.svg" border="0"
+                          align="middle" style="top:auto" alt="">
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div> -->
+
+          <!-- Gismeteo Informer (finish) -->
+
+        </div>
+
+      </div>
+      <!-- /.container -->
+  </header>
+  <!--/. header  -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-menu">
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">News</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Opinion</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Science</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Life</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Travel</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Moneys</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Art & Design</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Sports</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">People</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Health</a>
+        </li>
+        <li class="navbar-menu__item">
+          <a href="#" class="navbar-menu__link">Education</a>
+        </li>
+      </ul>
+      <!-- /.navbar-menu -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.navbar-bottom -->
+  <section class="articles">
+    <div class="container">
+      <div class="articles-wrapper">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a href="#" class="article">
+                <span class="article__title">
+                  25 Songs That Tell Us Where Music Is Going
+                </span>
+                <img class="article__image" src="img/articles/article-1.png" alt="Image: article-1 ">
+              </a></div>
+            <div class="swiper-slide"><a href="#" class="article">
+                <span class="article__title">
+                  These Ancient Assassins Eat Their Own Kind
+                </span>
+                <img class="article__image" src="img/articles/article-2.png" alt="Image: article-1 ">
+              </a></div>
+            <div class="swiper-slide"><a href="#" class="article">
+                <span class="article__title">
+                  How Do You Teach People to Love Difficult Music?
+                </span>
+                <img class="article__image" src="img/articles/article-3.png" alt="Image: article-1 ">
+              </a></div>
+            <div class="swiper-slide"><a href="#" class="article">
+                <span class="article__title">
+                  International Soccer’s Man of Mystery
+                </span>
+                <img class="article__image" src="img/articles/article-4.png" alt="Image: article-1 ">
+              </a></div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.articles-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section class="recommended">
+    <div class="container">
+      <div class="recommended-wrapper">
+        <div class="recommended-main recommended-main_food active  " id="food">
+          <div class="person recommended-main__person">
+            <img class="person__avatar" src="img/recommended/avatar-benjamin.png" alt="Image: avatar">
+            <div class="person__info">
+              <div class="person__name">
+                By Benjamin Turner
+              </div>
+              <div class="person__vocation">
+                Traveler
+              </div>
+            </div>
+          </div>
+          <!-- /.recommended-main__person -->
+          <span class="recommended__destinations">Destinations</span>
+          <h1 class="recommended__title">In Southeast England, White Cliffs and Fish</h1>
+          <div class="recommended__block-button">
+            <button class="button button-read recommended__button">
+              Read more
+              <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+            </button>
+            <a href="https://youtu.be/o4KGkaUnOrA?t=6" data-fancybox class="button-white recommended__button-white">
+              <img class="recommended__arrow-button" src="img/recommended/arrow-white.svg" alt="icon: arrow-play">
+            </a>
+
+            <p class="recommended__text-about-video">The chalk cliff of Beachy Head <br>
+              <span class="recommended__time-video">18:05</span>
+            </p>
+          </div>
+        </div>
+        <!-- /.recommended-main-->
+        <div class="recommended-main recommended-main_cars" id="cars">
+          <div class="person recommended-main__person">
+            <img class="person__avatar" src="img/segments/columns/avatar-1.png" alt="Image: avatar">
+            <div class="person__info">
+              <div class="person__name">
+                David Williams
+              </div>
+              <div class="person__vocation">
+                Racer
+              </div>
+            </div>
+          </div>
+          <!-- /.recommended-main__person -->
+          <span class="recommended__destinations">Destinations</span>
+          <h1 class="recommended__title">The Best car, For young men</h1>
+          <div class="recommended__block-button">
+            <button class="button button-read recommended__button">
+              Read more
+              <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+            </button>
+            <a href="https://youtu.be/pYL-TF2FeLA" class="button-white recommended__button-white" data-fancybox>
+              <img class="recommended__arrow-button" src="img/recommended/arrow-white.svg" alt="icon: arrow-play">
+            </a>
+            <p class="recommended__text-about-video">The best car <br>
+              <span class="recommended__time-video">10:05</span>
+            </p>
+          </div>
+        </div>
+        <!-- /.recommended-main-->
+        <div class="recommended-main  recommended-main_movies" id="movies">
+          <div class="person recommended-main__person">
+            <img class="person__avatar" src="img/segments/columns/avatar-2.png" alt="Image: avatar">
+            <div class="person__info">
+              <div class="person__name">
+                Alexandra Green
+              </div>
+              <div class="person__vocation">
+                Movie critic
+              </div>
+            </div>
+          </div>
+          <!-- /.recommended-main__person -->
+          <span class="recommended__destinations">Destinations</span>
+          <h1 class="recommended__title">Warrior season 2</h1>
+          <div class="recommended__block-button">
+            <button class="button button-read recommended__button">
+              Read more
+              <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+            </button>
+            <a href="https://youtu.be/93gPsB5_6vI" class="button-white recommended__button-white" data-fancybox>
+              <img class="recommended__arrow-button" src="img/recommended/arrow-white.svg" alt="icon: arrow-play">
+            </a>
+            <p class="recommended__text-about-video">Trailer <br>
+              <span class="recommended__time-video">8:15</span>
+            </p>
+          </div>
+        </div>
+        <!-- /.recommended-main-->
+        <div class="recommended-main recommended-main_nfl" id="nfl">
+          <div class="person recommended-main__person">
+            <img class="person__avatar" src="img/segments/columns/avatar-1.png" alt="Image: avatar">
+            <div class="person__info">
+              <div class="person__name">
+                Bob Turner
+              </div>
+              <div class="person__vocation">
+                Sport
+              </div>
+            </div>
+          </div>
+          <!-- /.recommended-main__person -->
+          <span class="recommended__destinations">Destinations</span>
+          <h1 class="recommended__title">2020 regular season schedules </h1>
+          <div class="recommended__block-button">
+            <button class="button button-read recommended__button">
+              Read more
+              <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+            </button>
+            <a href="https://youtu.be/SqSHzRuvAh8" class="button-white recommended__button-white" data-fancybox>
+              <img class="recommended__arrow-button" src="img/recommended/arrow-white.svg" alt="icon: arrow-play">
+            </a>
+            <p class="recommended__text-about-video">NFL || Pump Up 2 || 2020-2021<br>
+              <span class="recommended__time-video">13:00</span>
+            </p>
+          </div>
+        </div>
+        <!-- /.recommended-main-->
+        <div class="recommended-main recommended-main_tech" id="tech">
+          <div class="person recommended-main__person">
+            <img class="person__avatar" src="img/segments/columns/avatar-3.png" alt="Image: avatar">
+            <div class="person__info">
+              <div class="person__name">
+                Jhon Travolta
+              </div>
+              <div class="person__vocation">
+                Tech
+              </div>
+            </div>
+          </div>
+          <!-- /.recommended-main__person -->
+          <span class="recommended__destinations">Destinations</span>
+          <h1 class="recommended__title">Apple MacBook Air (2020) review</h1>
+          <div class="recommended__block-button">
+            <button class="button button-read recommended__button">
+              Read more
+              <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+            </button>
+            <a href="https://youtu.be/e05hdj37n30" class="button-white recommended__button-white" data-fancybox>
+              <img class="recommended__arrow-button" src="img/recommended/arrow-white.svg" alt="icon: arrow-play">
+            </a>
+            <p class="recommended__text-about-video">Apple MacBook Air (2020) review<br>
+              <span class="recommended__time-video">11:00</span>
+            </p>
+          </div>
+        </div>
+        <!-- /.recommended-main-->
+        <div class="recommended-list">
+          <h4 class="recommended-list__title">
+            Recommended for you
+          </h4>
+          <div class="recommended-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="recommended-list__block " data-target="#food">
+                  <span class="recommended-list__name word-food">
+                    Travel
+                  </span>
+                  <span class="recommended-list__text">
+                    In Southeast England, White Cliffs and Fish
+                    <a class="button-black recommended__button-black" href="https://youtu.be/o4KGkaUnOrA?t=6"
+                      data-fancybox>
+                      <img class="arrow-play" src="img/recommended/Play.png" alt="arrow-play">
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recommended-list__block " data-target="#cars">
+                  <span class="recommended-list__name word-cars">
+                    Cars
+                  </span>
+                  <span class="recommended-list__text">
+                    The Best car, For young men
+                  </span>
+                </div>
+                <!-- /.recommended-list__block -->
+              </div>
+              <div class="swiper-slide">
+                <div class="recommended-list__block" data-target="#movies">
+                  <span class="recommended-list__name word-movies">
+                    Movies
+                  </span>
+                  <span class="recommended-list__text">
+                    Warrior season 2
+                  </span>
+                </div>
+                <!-- /.recommended-list__block -->
+              </div>
+              <div class="swiper-slide">
+                <div class="recommended-list__block" data-target="#nfl">
+                  <span class="recommended-list__name word-nfl">
+                    NFL
+                  </span>
+                  <span class="recommended-list__text">
+                    2020 regular season schedules for all NFL teams
+                    <a class="button-black recommended__button-black" href="https://youtu.be/SqSHzRuvAh8" data-fancybox>
+                      <img class="arrow-play" src="img/recommended/Play.png" alt="arrow-play">
+                    </a>
+                  </span>
+                </div>
+                <!-- /.recommended-list__block -->
+              </div>
+              <div class="swiper-slide">
+                <div class="recommended-list__block " data-target="#tech">
+                  <span class="recommended-list__name word-tech">
+                    Tech Reviews
+                  </span>
+                  <span class="recommended-list__text">
+                    The bookcases you can buy online and assemble yourself
+                  </span>
+                </div>
+                <!-- /.recommended-list__block -->
+              </div>
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /recommended-swiper  -->
+          <div class="recommended-block-wrapper">
+            <div class="recommended-list__block " data-target="#food">
+              <span class="recommended-list__name word-food">
+                Travel
+              </span>
+              <span class="recommended-list__text">
+                In Southeast England, White Cliffs and Fish
+                <a class="button-black recommended__button-black" href="https://youtu.be/o4KGkaUnOrA?t=6" data-fancybox>
+                  <img src="img/recommended/Play.png" alt="arrow-play">
+                </a>
+              </span>
+            </div>
+            <!-- /.recommended-list__block -->
+            <div class="recommended-list__block " data-target="#cars">
+              <span class="recommended-list__name word-cars">
+                Cars
+              </span>
+              <span class="recommended-list__text">
+                The Best car, For young men
+              </span>
+            </div>
+            <!-- /.recommended-list__block -->
+            <div class="recommended-list__block" data-target="#movies">
+              <span class="recommended-list__name word-movies">
+                Movies
+              </span>
+              <span class="recommended-list__text">
+                Warrior season 2
+              </span>
+            </div>
+            <!-- /.recommended-list__block -->
+            <div class="recommended-list__block" data-target="#nfl">
+              <span class="recommended-list__name word-nfl">
+                NFL
+              </span>
+              <span class="recommended-list__text">
+                2020 regular season schedules for all NFL teams
+                <a class="button-black recommended__button-black" href="https://youtu.be/SqSHzRuvAh8" data-fancybox>
+                  <img src="img/recommended/Play.png" alt="arrow-play">
+                </a>
+              </span>
+            </div>
+            <!-- /.recommended-list__block -->
+            <div class="recommended-list__block " data-target="#tech">
+              <span class="recommended-list__name word-tech">
+                Tech Reviews
+              </span>
+              <span class="recommended-list__text">
+                The bookcases you can buy online and assemble yourself
+              </span>
+            </div>
+            <!-- /.recommended-list__block -->
+          </div>
+
+
+        </div>
+        <!-- /.recommended-list -->
+      </div>
+      <!--/.recommended-wrapper  -->
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <section class="segments">
+    <div class="container">
+      <div class="segments__wrapper">
+        <div class="cars">
+          <span class="word-cars cars__name ">Cars</span>
+          <h2 class="cars__title">
+            The joy of replicas: A $ 5 million car for $ 50,000
+          </h2>
+          <p class="cars__text">
+            The 31-year-old self-taught engineer and former amateur racer spends his days building artful recreations
+            of one of most iconic sports cars
+          </p>
+
+          <div class="cars__person ">
+            <img class="cars__person-avatar" src="img/segments/cars-avatar.png" alt="Image: avatar">
+            <span class="cars__person-name">Jessica Miller:</span>
+            <span class="cars__person-text">Even as the ride-hailing service’s future remem…</span>
+            <img src="img/segments/Comment.svg" alt="Icon: Comment">
+            <span class="cars__person-comment-counter">342</span>
+
+          </div>
+        </div>
+        <!-- /.cars -->
+        <div class="popular">
+          <button class="button popular-button">
+            Popular
+          </button>
+          <span class="popular__name">
+            Art & Design
+          </span>
+          <h3 class="popular__title">
+            Invisible ink: the weird world of tattoo removal – in pictures
+          </h3>
+          <div class="popular__person">
+            <img class="popular__avatar" src="img/segments/cars-avatar.png" alt="image: avatar">
+            <div class="popular__info">
+              <div class="popular__person-name">By Sarah Jenkins</div>
+              <div class="popular__person-info">
+                <span class="date popular__date">
+                  Sept 26
+                </span>
+                <span class="popular__comment">
+                  <img class="popular__comment-icon" src="img/segments/Comment.svg" alt="Icon: comment">
+                  16
+                </span>
+                <span class="popular__likes">
+                  <img class=" popular__likes-icon" src="img/segments/like.svg" alt="Icon: comment">
+                  832
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.popular -->
+        <div class="columns">
+
+          <div class="columns__name">
+            Columns
+          </div>
+          <div class="columns__block">
+            <h3 class="columns__title">
+              Architecture is the thoughtful making of space
+            </h3>
+            <div class="person columns__person">
+              <img class="person__avatar" src="img/segments/columns/avatar-1.png" alt="Image: avatar">
+              <div class="person__info">
+                <div class="person__name">
+                  David Williams
+                </div>
+                <div class="person__vocation">
+                  Architect
+                </div>
+              </div>
+            </div>
+            <!-- /.person -->
+          </div>
+          <!-- /.columns__block -->
+          <div class="columns__block">
+            <h3 class="columns__title">
+              The details are not the details. They make the design.
+            </h3>
+            <div class="person columns__person">
+              <img class="person__avatar" src="img/segments/columns/avatar-2.png" alt="Image: avatar">
+              <div class="person__info">
+                <div class="person__name">
+                  Alexandra Green
+                </div>
+                <div class="person__vocation">
+                  Interior designer
+                </div>
+              </div>
+            </div>
+            <!-- /.person -->
+          </div>
+          <!-- /.columns__block -->
+          <div class="columns__block">
+            <h3 class="columns__title">
+              Live life to the fullest, and focus on the positive
+            </h3>
+            <div class="person columns__person">
+              <img class="person__avatar" src="img/segments/columns/avatar-3.png" alt="Image: avatar">
+              <div class="person__info">
+                <div class="person__name">
+                  Olivia Thompson
+                </div>
+                <div class="person__vocation">
+                  Coacher
+                </div>
+              </div>
+            </div>
+            <!-- /.person -->
+          </div>
+          <!-- /.columns__block -->
+          <a class="columns__link" href="#">Read more</a>
+        </div>
+        <!-- /.columns -->
+        <div class="columns-mobile">
+          <div class="columns__name">
+            Columns
+          </div>
+          <div class="swiper-columns">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="columns__block">
+                  <h3 class="columns__title">
+                    Architecture is the thoughtful making of space
+                  </h3>
+                  <div class="person columns__person">
+                    <img class="person__avatar" src="img/segments/columns/avatar-1.png" alt="Image: avatar">
+                    <div class="person__info">
+                      <div class="person__name">
+                        David Williams
+                      </div>
+                      <div class="person__vocation">
+                        Architect
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.person -->
+                </div>
+                <!-- /.columns__block -->
+              </div>
+              <div class="swiper-slide">
+                <div class="columns__block">
+                  <h3 class="columns__title">
+                    The details are not the details. They make the design.
+                  </h3>
+                  <div class="person columns__person">
+                    <img class="person__avatar" src="img/segments/columns/avatar-2.png" alt="Image: avatar">
+                    <div class="person__info">
+                      <div class="person__name">
+                        Alexandra Green
+                      </div>
+                      <div class="person__vocation">
+                        Interior designer
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.person -->
+                </div>
+                <!-- /.columns__block -->
+              </div>
+              <div class="swiper-slide">
+                <div class="columns__block">
+                  <h3 class="columns__title">
+                    Live life to the fullest, and focus on the positive
+                  </h3>
+                  <div class="person columns__person">
+                    <img class="person__avatar" src="img/segments/columns/avatar-3.png" alt="Image: avatar">
+                    <div class="person__info">
+                      <div class="person__name">
+                        Olivia Thompson
+                      </div>
+                      <div class="person__vocation">
+                        Coacher
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.person -->
+                </div>
+                <!-- /.columns__block -->
+              </div>
+
+            </div>
+          </div>
+          <!-- /.swiper-columns -->
+          <a class="columns__link" href="#">Read more</a>
+        </div>
+        <!-- /.columns-mobile -->
+        <div class="cats">
+          <img class="cats__image" src="img/segments/cat.png" alt="Image: cat">
+          <h3 class="cats__title">
+            200+ Doomed Cats Saved From Euthanization
+          </h3>
+
+        </div>
+
+        <!-- /.cats -->
+        <div class="small-block small-block-one ">
+          <h3 class="small-block__title">
+            Is Coffee Bad for Bones?
+          </h3>
+          <p class="small-block__text">
+            Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones
+          </p>
+          <span class="small-block__date">
+            Oct 15
+          </span>
+
+          <div class="line" id="one"></div>
+
+        </div>
+        <!-- /.small-block -->
+        <div class="small-block small-block-two">
+          <h3 class="small-block__title">
+            What We Manufacture
+          </h3>
+          <p class="small-block__text">
+            A global history of the factory and the modern world that all should read
+          </p>
+          <span class="small-block__date">
+            Oct 14
+          </span>
+          <div class="line" id="two"></div>
+        </div>
+        <!-- /.small-block -->
+        <div class="small-block small-block-three">
+          <h3 class="small-block__title">
+            It’s a Stressful World
+          </h3>
+          <p class="small-block__text">
+            Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?
+          </p>
+          <span class="small-block__date">
+            Oct 14
+          </span>
+          <div class="line" id="three"></div>
+        </div>
+        <!-- /.small-block -->
+        <div class="small-block small-block-four">
+          <h3 class="small-block__title">
+            A Treat for Lemon Lovers
+          </h3>
+          <p class="small-block__text">
+            This tangerine, ginger and chocolate tart has verve, depth and a hint of spice
+          </p>
+          <span class="small-block__date">
+            Oct 13
+          </span>
+          <div class="line" id="four"></div>
+        </div>
+        <!-- /.small-block -->
+        <div class="small-block__button">
+          <button class="button-read-hide" id="up">hide</button>
+          <button class="button-read-hide" id="down">read more</button>
+        </div>
+
+
+      </div>
+      <!-- /.segments__wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section class="bloom">
+    <h1 class="bloom__title">
+      The Big Bloom or «How Flowering
+      Plants Changed the World»
+    </h1>
+    <button class="button button-read bloom__button">
+      Read more
+      <img class="arrow-button" src="img/arrow-button.svg" alt="icon: row">
+    </button>
+  </section>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=B5c6ftywpo5ATl"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

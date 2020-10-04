@@ -1,0 +1,39 @@
+.articles
+  margin-bottom: 30px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 30px
+    padding-top: 25px
+    background: #30363D
+    border-radius: 10px
+.article
+  display: flex
+  align-items: center
+  justify-content: center
+  border-right: 1px solid #4B5157
+ 
+  &__title
+    // font-family: Roboto Slab
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    display: flex
+    align-items: center
+    max-width: 154px  
+    color: #FFFFFF
+    margin-right: 15px
+    margin-left: 25px
+  &__image
+    width: 65px
+    height: 65px
+    object-fit: cover 
+    margin-right: 25px
+
+@media  ( max-width: 576px )
+  .articles 
+    margin-bottom: 15px
+    &-wrapper
+      padding: 0
